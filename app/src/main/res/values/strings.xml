@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Blockchain</string>
+    <string name="add_new_block">Add New Block</string>
+    <string name="block_id">Block ID:</string>
+    <string name="block_hash">Block Hash:</string>
+    <string name="previous_hash">Prev Hash:</string>
+    <string name="time_of_transaction">Time:</string>
+    <string name="total_number_of_nodes">Total Blocks:</string>
+    <string name="latest_block_hash">Latest Block Hash:</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/block_bg_rounded"
+    android:padding="20dp"
+    android:id="@+id/block_item_layout">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/block_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/block_id"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/block_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/block_hash"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/block_id"
+        android:padding="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/block_prev_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/previous_hash"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/block_hash"
+        android:padding="5dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/block_timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/time_of_transaction"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/block_prev_hash"
+        android:padding="5dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
