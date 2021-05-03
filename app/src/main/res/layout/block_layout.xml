@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:background="@drawable/block_bg_rounded"
     android:padding="20dp"
@@ -23,7 +23,7 @@
 
     <TextView
         app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/block_hash"
+        android:id="@+id/block_hash_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/block_hash"
@@ -34,17 +34,40 @@
         />
 
     <TextView
-        android:id="@+id/block_prev_hash"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/block_hash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:scrollHorizontally="false"
+        android:paddingStart="5dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/block_hash_tv"
+        />
+
+
+    <TextView
+        android:id="@+id/block_prev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/previous_hash"
+        android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/colorPrimary"
         app:layout_constraintTop_toBottomOf="@+id/block_hash"
-        android:padding="5dp"
-
 
         />
+    <TextView
+        android:id="@+id/block_prev_hash"
+        android:layout_width="match_parent"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:paddingStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/block_prev"
+        />
+
 
     <TextView
         android:id="@+id/block_timestamp"

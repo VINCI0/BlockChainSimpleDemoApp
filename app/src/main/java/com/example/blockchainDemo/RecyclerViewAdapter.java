@@ -110,15 +110,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             Block block = chain.getLedger().get(position);
             blockId.setText("Block Id:"+Integer.toString(block.getBlockId()));
 //            blockHash.setText("Block Hash:"+block.getHash().toString());
-            blockHash.setText("Block Hash: "+block.getBlockHashString());
+            blockHash.setText(block.getBlockHashString());
 
             if (block.getPrevHash()!=null) {
 //                prevHash.setText("Prev Hash:" + block.getPrevHash().toString());
-                prevHash.setText("Prev Hash: " + block.getPrevHashInString());
+                prevHash.setText(block.getPrevHashInString());
             }
 
             else {
-                prevHash.setText("Prev Hash: Null");
+                prevHash.setText("Null");
             }
 
             timestamp.setText("Time:"+block.getTimestamp());
